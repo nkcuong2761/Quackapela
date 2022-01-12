@@ -37,7 +37,7 @@ document.addEventListener('keydown', function keyPressed(event) {
 	// document.getElementById(note).src = "images/" + note + "-o.png";
 	document.getElementById(note).src = duckArr[i].src;
     if (down && timeHoldPress>0)
-		return;
+			return;
 	playQuack(quackArr[i]);
 	timeHoldPress += 1;
     down = true;

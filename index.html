@@ -5,38 +5,27 @@
     <meta charset="utf-8">
     <title>Quackapela</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/webflow.css" rel="stylesheet" type="text/css">
-    <link href="css/quackapela.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-<!--    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="images/webclip.png" rel="apple-touch-icon"> -->
-<!--     <link rel="preload" as="image" onload="this.rel='stylesheet'" href="images/aB1-l.png">
-    <link rel="preload" as="audio" onload="this.rel='stylesheet'" href="Pitch/"> -->
-    <!-- <link rel="preload" as="script" href="js/custom.js"> -->
-    <script language="JavaScript" type="text/javasript" src="js/custom.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javasript" src="script.js"></script>
 
 </head>
 
 <body class="body" onkeydown="keyPressed(event)" onkeyup="keyUnpressed(event)" onload="preLoad()">
     <div>
-        <nav class="navigation-container-full">
-            <div class="w-layout-grid grid">
-                <img src="images/quackapela-05.png" srcset="images/quackapela-05-p-500.png 500w, images/quackapela-05.png 873w" sizes="(max-width: 479px) 92vw, (max-width: 918px) 95vw, 873px" class="logo">
-<!--                 <p class="watermark" style="color: #f6cd61"><a href="https://www.instagram.com/cuongkodau/" target="_blank">A PROJECT BY CUONG NGUYEN</a></p> -->
-<!--                <a href="https://www.behance.net/nkcuong2761" target="_blank"><img scr="images/behance.png" class="icon"></img></a>
-                    <a href="https://www.instagram.com/cuongkodau/" target="_blank"><img scr="images/instagram.png" class="icon"></img></a> -->
-                <div class="navigation-button-wrap">
-<!--                     <a href="https://www.behance.net/nkcuong2761" target="_blank" class="link-block w-inline-block"></a>
-                    <a href="https://www.instagram.com/cuongkodau/" target="_blank" class="link-block-2 w-inline-block"></a> -->
-                    <a target="_blank" class="link-block-3 w-inline-block"></a>
-                    <div class="overlay">
-                    <div class="text-banking">VIB
-                        040704060086167</div>
-                    </div>
+        <div class="w-layout-grid">
+            <div class="navigation-button-wrap">
+                <div class="link-block">
+                  <img src="images/donate.png"/>
+                </div>
+                <div class="overlay">
+                  <div class="text-banking">VIB
+                    040704060086167</div>
                 </div>
             </div>
-        </nav>
+            <div class="logo">
+              <img src="images/quackapela-05.png">
+            </div>
+        </div>
     </div>
     <div class="blackBars">
         <img src="images/cB1-l.png" id="cB1" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
@@ -67,35 +56,6 @@
         <img src="images/bW2-l.png" id="bW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
     </div>
 
-    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5ee97fa018b465589caf42a6" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="js/custom.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
-
-<!--     <div class="blackBars">
-        <img src="images/cB1-l.png" id="cB1" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/dB1-l.png" id="dB1" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/fB1-l.png" id="fB1" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/gB1-l.png" id="gB1" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/aB1-l.png" id="aB1" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/cB2-l.png" id="cB2" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/dB2-l.png" id="dB2" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/fB2-l.png" id="fB2" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/gB2-l.png" id="gB2" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/aB2-l.png" id="aB2" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-    </div>
-    <div class="whiteBars">
-        <img src="images/cW1-l.png" id="cW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/dW1-l.png" id="dW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/eW1-l.png" id="eW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/fW1-l.png" id="fW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/gW1-l.png" id="gW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/aW1-l.png" id="aW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/bW1-l.png" id="bW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/cW2-l.png" id="cW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/dW2-l.png" id="dW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/eW2-l.png" id="eW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/fW2-l.png" id="fW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/gW2-l.png" id="gW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/aW2-l.png" id="aW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/bW2-l.png" id="bW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)"> -->
