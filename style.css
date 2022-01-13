@@ -129,6 +129,10 @@ a:hover, a:active {
 	animation-fill-mode: forwards;
 }
 
+#prompt {
+	display: none;
+}
+
 @media screen and (min-device-width: 601px) {
 	#cB1 {grid-column: 1 / span 1;}
 	#dB1 {grid-column: 2 / span 1;}
@@ -154,6 +158,20 @@ a:hover, a:active {
 	#gW2 {grid-column: 12 / span 1;}
 	#aW2 {grid-column: 13 / span 1;}
 	#bW2 {grid-column: 14 / span 1;}
+}
+
+@media screen and (orientation: portrait) {
+	#prompt {
+		background-color: rgba(0,0,0,0.5);
+		display: block;
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 50;
+		text-align: center;
+		line-height: 100vh;
+	}
 }
 
 @keyframes slideInFromTop {

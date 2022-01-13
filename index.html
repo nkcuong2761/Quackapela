@@ -11,6 +11,9 @@
 </head>
 
 <body class="body" onkeydown="keyPressed(event)" onkeyup="keyUnpressed(event)" onload="preLoad()">
+    <div id="prompt">
+      Please rotate your screen
+    </div>
     <div>
         <div class="w-layout-grid">
             <div class="navigation-button-wrap">
@@ -28,34 +31,58 @@
         </div>
     </div>
     <div class="blackBars">
-        <img src="images/cB1-l.png" id="cB1" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/dB1-l.png" id="dB1" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/fB1-l.png" id="fB1" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/gB1-l.png" id="gB1" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/aB1-l.png" id="aB1" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/cB2-l.png" id="cB2" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/dB2-l.png" id="dB2" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/fB2-l.png" id="fB2" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/gB2-l.png" id="gB2" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/aB2-l.png" id="aB2" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
+        <img src="images/cB1-l.png" id="cB1" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/dB1-l.png" id="dB1" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/fB1-l.png" id="fB1" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/gB1-l.png" id="gB1" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/aB1-l.png" id="aB1" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/cB2-l.png" id="cB2" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/dB2-l.png" id="dB2" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/fB2-l.png" id="fB2" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/gB2-l.png" id="gB2" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/aB2-l.png" id="aB2" class="black" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
     </div>
     <div class="whiteBars">
-        <img src="images/cW1-l.png" id="cW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/dW1-l.png" id="dW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/eW1-l.png" id="eW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/fW1-l.png" id="fW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/gW1-l.png" id="gW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/aW1-l.png" id="aW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/bW1-l.png" id="bW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/cW2-l.png" id="cW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/dW2-l.png" id="dW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/eW2-l.png" id="eW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/fW2-l.png" id="fW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/gW2-l.png" id="gW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/aW2-l.png" id="aW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
-        <img src="images/bW2-l.png" id="bW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="mouseClicked(id)" ontouchend="mouseReleased(id)">
+        <img src="images/cW1-l.png" id="cW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/dW1-l.png" id="dW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/eW1-l.png" id="eW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/fW1-l.png" id="fW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/gW1-l.png" id="gW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/aW1-l.png" id="aW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/bW1-l.png" id="bW1" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/cW2-l.png" id="cW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/dW2-l.png" id="dW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/eW2-l.png" id="eW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/fW2-l.png" id="fW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/gW2-l.png" id="gW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/aW2-l.png" id="aW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
+        <img src="images/bW2-l.png" id="bW2" class="white" onmousedown="mouseClicked(id)" onmouseup="mouseReleased(id)" ontouchstart="touched(id)" ontouchend="touchRelease(id)">
     </div>
-
+    <audio id="audio-cB1"><source src="Pitch/cB1.wav"/></audio>
+    <audio id="audio-dB1"><source src="Pitch/dB1.wav"/></audio>
+    <audio id="audio-eB1"><source src="Pitch/eB1.wav"/></audio>
+    <audio id="audio-fB1"><source src="Pitch/fB1.wav"/></audio>
+    <audio id="audio-gB1"><source src="Pitch/gB1.wav"/></audio>
+    <audio id="audio-aB1"><source src="Pitch/aB1.wav"/></audio>
+    <audio id="audio-cB2"><source src="Pitch/cB2.wav"/></audio>
+    <audio id="audio-dB2"><source src="Pitch/dB2.wav"/></audio>
+    <audio id="audio-fB2"><source src="Pitch/fB2.wav"/></audio>
+    <audio id="audio-gB2"><source src="Pitch/gB2.wav"/></audio>
+    <audio id="audio-aB2"><source src="Pitch/aB2.wav"/></audio>
+    <audio id="audio-cW1"><source src="Pitch/cW1.wav"/></audio>
+    <audio id="audio-dW1"><source src="Pitch/dW1.wav"/></audio>
+    <audio id="audio-eW1"><source src="Pitch/eW1.wav"/></audio>
+    <audio id="audio-fW1"><source src="Pitch/fW1.wav"/></audio>
+    <audio id="audio-gW1"><source src="Pitch/gW1.wav"/></audio>
+    <audio id="audio-aW1"><source src="Pitch/aW1.wav"/></audio>
+    <audio id="audio-bW1"><source src="Pitch/bW1.wav"/></audio>
+    <audio id="audio-cW2"><source src="Pitch/cW2.wav"/></audio>
+    <audio id="audio-dW2"><source src="Pitch/dW2.wav"/></audio>
+    <audio id="audio-eW2"><source src="Pitch/eW2.wav"/></audio>
+    <audio id="audio-fW2"><source src="Pitch/fW2.wav"/></audio>
+    <audio id="audio-gW2"><source src="Pitch/gW2.wav"/></audio>
+    <audio id="audio-aW2"><source src="Pitch/aW2.wav"/></audio>
+    <audio id="audio-bW2"><source src="Pitch/bW2.wav"/></audio>
     <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
